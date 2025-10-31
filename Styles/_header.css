@@ -1,12 +1,11 @@
 .topbar {
-  width: 97vw;
+  width: 100vw;
   height: 50px;
   background: linear-gradient(90deg, #1a4b7a, #0f2f4d);
   color: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
+  justify-content: space-around;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   position: relative;
 }
