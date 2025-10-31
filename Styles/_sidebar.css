@@ -1,0 +1,87 @@
+.menu-container {
+  width: 320px;
+  height: 87vh;
+  background: linear-gradient(to bottom, #1a4b7a, #0f2f4d); /* reemplazo de $primary-light, $primary-dark */
+  color: #ffffff; /* reemplazo de $text-light */
+  padding: 13px;
+  border-radius:  0px 10px 10px 0px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* reemplazo de $shadow */
+  overflow-y: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* Scroll a la izquierda */
+  direction: rtl;
+}
+
+.menu-container * {
+  direction: ltr;
+}
+
+.menu-container .menu-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.menu-container .menu-search input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.menu-container details {
+  margin: 4px 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.menu-container details summary {
+  list-style: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-container details summary::-webkit-details-marker {
+  display: none;
+}
+
+.menu-container details summary:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.menu-container details[open] summary {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.menu-container details summary img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+}
+
+.menu-container details ul {
+  margin: 5px 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-container details ul li {
+  padding: 4px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.menu-container details ul li:hover {
+  text-decoration: underline;
+}

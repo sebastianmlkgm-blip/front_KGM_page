@@ -4,147 +4,167 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menú Desplegable</title>
-  <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="./Styles/main.scss"> -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="menu-container">
-    <div class="menu-top">
-        <div class="menu-title">PRUEBAS - PRUEBAS - KORANDO MOTOR</div>
-    
-        <div class="menu-search">
-          <input type="text" placeholder="Buscar opción..." />
+
+    <header class="topbar">
+        <div class="logo">KORANDO MOTOR</div>
+        
+        <div class="user-menu">
+            <div class="user-info" id="userToggle">
+            <span class="username">Juan Pérez</span>
+            <span class="role">Administrador</span>
+            <span class="arrow">▼</span>
+            </div>
+
+            <div class="dropdown" id="dropdownMenu">
+            <button>Información Usuario</button>
+            <button>Cambiar de Usuario</button>
+            <button class="logout">Cerrar Sesión</button>
+            </div>
         </div>
+    </header>
+
+    <div class="menu-container">
+        <div class="menu-top">
+            <div class="menu-title">PRUEBAS - PRUEBAS - KORANDO MOTOR</div>
+        
+            <div class="menu-search">
+            <input type="text" placeholder="Buscar opción..." />
+            </div>
+        </div>
+
+        <details>
+            <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">AMS</summary>
+            <ul>
+                <li>Comentarios de Campos</li>
+                <li>Configuración del sistema</li>
+                <li>Filtros de Reportes</li>
+                <li>Formas Pre-impresas</li>
+                <li>Importar Archivos (Excel)</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Admin Configuración</summary>
+            <ul>
+                <li>Administración Usuarios</li>
+                <li>Parámetros Automotriz</li>
+                <li>Parámetros Contabilidad</li>
+                <li>Parámetros Finanzas</li>
+                <li>Parámetros Generales</li>
+                <li>Parámetros Importaciones</li>
+                <li>Parámetros Inventarios</li>
+                <li>Parámetros Marketing</li>
+                <li>Parámetros Nómina</li>
+                <li>Parámetros Taller</li>
+                <li>Parámetros Vehículos</li>
+            </ul>
+        </details>
+        
+        <details>
+            <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Automotriz</summary>
+            <ul>
+                <li>Consultas de Vehículos</li>
+                <li>Créditos</li>
+                <li>Gestor Documental</li>
+                <li>Informes de Vehículos</li>
+                <li>Vehículos</li>
+            </ul>
+        </details>
+        
+        <details>
+            <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Contabilidad</summary>
+            <ul>
+                <li>Actualizaciones</li>
+                <li>Certificados</li>
+                <li>Comprobantes</li>
+                <li>Informes de Contabilidad</li>
+                <li>Terceros y Análisis de Cuentas</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">CRM</summary>
+            <ul>
+                <li>Encuestas</li>
+                <li>Marketing</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Finanzas</summary>
+            <ul>
+                <li>Cartera</li>
+                <li>Consultas de Finanzas</li>
+                <li>Informes de Cartera</li>
+                <li>Informes de Finanzas</li>
+                <li>Informes de Tesorería</li>
+                <li>Tesorería</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Gerencia</summary>
+            <ul>
+                <li>Consultas Gerenciales</li>
+                <li>Análisis Posventa</li>
+                <li>Empleados (Gráfico)</li>
+                <li>Movimientos</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Inventarios</summary>
+            <ul>
+                <li>Clientes</li>
+                <li>Consultas de Inventario</li>
+                <li>Informes de Inventario</li>
+                <li>Inventario Físico</li>
+                <li>Ítems</li>
+                <li>Proveedores</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Proyecto New</summary>
+            <ul>
+                <li>Nacionalización</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">SGC</summary>
+            <ul>
+                <li>Procedimientos</li>
+                <li>Proyecto VEHICENTRO</li>
+                <li>Tareas</li>
+            </ul>
+        </details>
+    
+        <details>
+            <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Talento Humano</summary>
+            <ul>
+                <li>Actualización Empleados</li>
+                <li>Informes de Nómina</li>
+                <li>Liquidación Nómina</li>
+                <li>Mantenimiento Nómina</li>
+                <li>Procesos</li>
+            </ul>
+        </details>
+        
+        <details>
+            <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Taller de Servicio</summary>
+            <ul>
+                <li>Consultas de Taller</li>
+                <li>Herramientas</li>
+                <li>Informes de Taller</li>
+                <li>Taller</li>
+            </ul>
+        </details>
+
     </div>
-
-    <details>
-        <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">AMS</summary>
-        <ul>
-            <li>Comentarios de Campos</li>
-            <li>Configuración del sistema</li>
-            <li>Filtros de Reportes</li>
-            <li>Formas Pre-impresas</li>
-            <li>Importar Archivos (Excel)</li>
-        </ul>
-    </details>
-
-    <details>
-        <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Admin Configuración</summary>
-        <ul>
-            <li>Administración Usuarios</li>
-            <li>Parámetros Automotriz</li>
-            <li>Parámetros Contabilidad</li>
-            <li>Parámetros Finanzas</li>
-            <li>Parámetros Generales</li>
-            <li>Parámetros Importaciones</li>
-            <li>Parámetros Inventarios</li>
-            <li>Parámetros Marketing</li>
-            <li>Parámetros Nómina</li>
-            <li>Parámetros Taller</li>
-            <li>Parámetros Vehículos</li>
-        </ul>
-    </details>
-      
-    <details>
-        <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Automotriz</summary>
-        <ul>
-            <li>Consultas de Vehículos</li>
-            <li>Créditos</li>
-            <li>Gestor Documental</li>
-            <li>Informes de Vehículos</li>
-            <li>Vehículos</li>
-        </ul>
-    </details>
-      
-    <details>
-        <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Contabilidad</summary>
-        <ul>
-            <li>Actualizaciones</li>
-            <li>Certificados</li>
-            <li>Comprobantes</li>
-            <li>Informes de Contabilidad</li>
-            <li>Terceros y Análisis de Cuentas</li>
-        </ul>
-    </details>
-
-    <details>
-        <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">CRM</summary>
-        <ul>
-            <li>Encuestas</li>
-            <li>Marketing</li>
-        </ul>
-    </details>
-
-    <details>
-        <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Finanzas</summary>
-        <ul>
-            <li>Cartera</li>
-            <li>Consultas de Finanzas</li>
-            <li>Informes de Cartera</li>
-            <li>Informes de Finanzas</li>
-            <li>Informes de Tesorería</li>
-            <li>Tesorería</li>
-        </ul>
-    </details>
-
-    <details>
-        <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Gerencia</summary>
-        <ul>
-            <li>Consultas Gerenciales</li>
-            <li>Análisis Posventa</li>
-            <li>Empleados (Gráfico)</li>
-            <li>Movimientos</li>
-        </ul>
-    </details>
-
-    <details>
-        <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Inventarios</summary>
-        <ul>
-            <li>Clientes</li>
-            <li>Consultas de Inventario</li>
-            <li>Informes de Inventario</li>
-            <li>Inventario Físico</li>
-            <li>Ítems</li>
-            <li>Proveedores</li>
-        </ul>
-    </details>
-
-    <details>
-        <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Proyecto New</summary>
-        <ul>
-            <li>Nacionalización</li>
-        </ul>
-    </details>
-
-    <details>
-        <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">SGC</summary>
-        <ul>
-            <li>Procedimientos</li>
-            <li>Proyecto VEHICENTRO</li>
-            <li>Tareas</li>
-        </ul>
-    </details>
- 
-    <details>
-        <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Talento Humano</summary>
-        <ul>
-            <li>Actualización Empleados</li>
-            <li>Informes de Nómina</li>
-            <li>Liquidación Nómina</li>
-            <li>Mantenimiento Nómina</li>
-            <li>Procesos</li>
-        </ul>
-    </details>
-      
-    <details>
-        <summary><img src="https://cdn-icons-png.flaticon.com/512/716/716784.png" alt="">Taller de Servicio</summary>
-        <ul>
-            <li>Consultas de Taller</li>
-            <li>Herramientas</li>
-            <li>Informes de Taller</li>
-            <li>Taller</li>
-        </ul>
-    </details>
-
-  </div>
 </body>
 </html>

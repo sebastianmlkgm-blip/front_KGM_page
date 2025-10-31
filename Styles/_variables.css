@@ -1,0 +1,11 @@
+:root {
+  --primary-light: #1a4b7a;
+  --primary-dark: #0f2f4d;
+  --text-light: #ffffff;
+  --bg-dark: #163c63;
+  --danger: #d9534f;
+  --danger-hover: #c9302c;
+  --shadow: 0 4px 10px rgba(0,0,0,0.3);
+  --radius: 8px;
+  --transition: 0.25s;
+}

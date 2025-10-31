@@ -1,0 +1,105 @@
+.topbar {
+  width: 97vw;
+  height: 50px;
+  background: linear-gradient(90deg, #1a4b7a, #0f2f4d);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+/* Logo */
+.topbar .logo {
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+/* Menú de usuario */
+.user-menu {
+  position: relative;
+}
+
+/* Info del usuario */
+.user-menu .user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.25s;
+}
+
+.user-menu .user-info:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Nombre y rol */
+.user-menu .username {
+  font-weight: 600;
+}
+
+.user-menu .role {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Flecha */
+.user-menu .arrow {
+  font-size: 0.8rem;
+  transition: transform 0.2s;
+}
+
+/* Dropdown */
+.user-menu .dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #163c63;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: none;
+  flex-direction: column;
+  width: 200px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Botones del dropdown */
+.user-menu .dropdown button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  text-align: left;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.user-menu .dropdown button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Cerrar sesión */
+.user-menu .dropdown button.logout {
+  background: #d9534f;
+  text-align: center;
+}
+
+.user-menu .dropdown button.logout:hover {
+  background: #c9302c;
+}
+
+/* Mostrar menú cuando esté activo */
+.user-menu.active .dropdown {
+  display: flex;
+}
+
+.user-menu.active .arrow {
+  transform: rotate(180deg);
+}
